@@ -1,0 +1,35 @@
+.textarea:focus{
+    background-color: #61dafb;
+ }
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+ .tooltip:hover .tooltiptop{
+    visibility: visible;
+  }
+  .tooltip .tooltiptop {
+    visibility: hidden;
+    width: 120px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 70%;
+  }
+  .tooltip .tooltiptop::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }

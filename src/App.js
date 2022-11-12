@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useRef, useState } from 'react';
+import List from './components/List';
 
 function App() {
+  
+  // console.log(arr)
+  //  const ref=useRef()
+   
+  // function handleEnter(event) {
+  //   if (event.keyCode === 13) {
+  //     const form = event.target.form;
+  //     const index = Array.prototype.indexOf.call(form, event.target);
+  //     form.elements[index + 1].focus();
+  //     event.preventDefault();
+  //   }
+  // }
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <List/>
     </div>
   );
 }
