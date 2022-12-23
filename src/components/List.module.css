@@ -33,3 +33,9 @@
     border-style: solid;
     border-color: black transparent transparent transparent;
   }
+  .save_button{
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }

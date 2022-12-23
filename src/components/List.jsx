@@ -39,8 +39,7 @@ const App = () => {
     console.log(id)
     if(id){
       setDel("2px solid blue")
-    }
-     
+    } 
   }
  
   return (
@@ -48,10 +47,33 @@ const App = () => {
     {
     list&&
     list.map((item, index) => (
-      <div style={{display:"flex",alignItems:"center",width:"70%",margin:"50px",border:"1px dotted black",padding:"30px"}}className={styles.tooltip_container}>
+      <div 
+      style={
+        {
+          display:"flex",
+          alignItems:"center",
+          width:"70%",
+          margin:"50px",
+          border:"1px dotted black",
+          padding:"20px"
+          }}className={styles.tooltip_container}>
 
-      <div style={{height:"40px",width:"50px",border:"1px solid black"}}>{icon? "=" : ""}</div>
-      <div style={{backgroundColor:'lightblue', margin:'20px 25%', textAlign:'center', fontSize:'40px',width:"800px",border:del}}
+      <div 
+      style={{
+        height:"40px",
+        width:"50px",
+        border:"1px solid black"
+        }}>
+          {icon? "=" : ""}</div>
+      <div 
+      style={
+        {
+          backgroundColor:'lightblue', 
+          margin:'20px 25%', 
+          textAlign:'center', 
+          fontSize:'40px',
+          width:"800px",
+          border:del}}
         onDragStart={(e) => dragStart(e, index)}
         onDragEnter={(e) => dragEnter(e, index)}
         onDragEnd={drop}
@@ -63,6 +85,7 @@ const App = () => {
       </div>
       </div>
       ))}
+      <button className={styles.save_button}>save</button>
     </>
   );
 };
